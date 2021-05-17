@@ -1,0 +1,84 @@
+@import "./common.scss";
+
+
+.vn-dialog.scene-wrapper {
+    --sprite-size: 760px;
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .scene-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: cover no-repeat;
+
+    }
+
+    .character-sprite-layer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        top: 0;
+        left: 0;     
+        height: 100%;
+        width: 100%; 
+        .sprite {
+            height: var(--sprite-size);
+            width: var(--sprite-size);
+        }
+    }
+
+    .dialog-box-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .dialog-box {
+            width: 55%;
+            height: 18%;
+            background: white;
+            border: 3px solid black;
+            border-bottom: 0px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 30px;
+
+            .dialog-text {
+                font-size: 22px;
+            }
+        }
+    }
+    .dialog-options-container {
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .dialog-options {
+            width: 25%;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            
+            span {
+                width: 50%; 
+            }
+        }
+    }
+}

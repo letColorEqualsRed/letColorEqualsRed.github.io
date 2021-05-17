@@ -1,0 +1,19 @@
+@import './common.scss';
+
+.story-viewer-container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+
+    .story-viewer {
+        height: 80vh;
+        width: 95vw;
+        border-top: 1px;
+        border-left: 1px;
+        border-right: 3px;
+        border-bottom: 3px;
+        border: solid black;
+        box-shadow: 3px 3px 8px rgba(122, 122, 122, 0.5);
+    }
+}
